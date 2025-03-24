@@ -1,0 +1,88 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Upload Form Container */
+.modal-content {
+  background: white;
+  width: 500px; /* Fixed width */
+  height: 450px; /* Fixed height */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Input Fields */
+.modal-content input, 
+.modal-content textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal-content select {
+  width: 98.5%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Limit Description Box */
+.modal-content textarea {
+  height: 70px;
+  max-height: 100px; /* Prevents it from growing too much */
+  resize: none; /* Disables resizing */
+}
+
+/* Image Upload Input */
+.modal-content input[type="file"] {
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+/* Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-upload, .btn-close {
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-upload {
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-close {
+  background: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+}

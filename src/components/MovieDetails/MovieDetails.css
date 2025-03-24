@@ -1,0 +1,53 @@
+/* Movie Details */
+/* .movie-details {
+    flex: 1;
+    background: white;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-banner {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+  }
+  
+  .movie-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }  */
+
+  .movie-details {
+    display: flex;
+    width: 40%;
+    height: auto;
+    align-items: flex-start; /* Aligns content to the top */
+    gap: 10px; /* Space between text and image */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-left: 20px;
+  }
+  
+  .details {
+    flex: 1; /* Text takes up remaining space */
+    background: white;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
+  .movie-banner {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .movie-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }

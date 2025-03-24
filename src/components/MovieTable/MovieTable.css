@@ -1,0 +1,28 @@
+/* Movie Table */
+.table-container {
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .movie-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .movie-table th, .movie-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .movie-table th {
+    background: #ccc;
+  }
+  
+  .movie-row:hover {
+    background: #6495c9;
+    cursor: pointer;
+  }

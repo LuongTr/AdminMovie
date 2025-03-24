@@ -1,0 +1,19 @@
+/* Layout */
+.content {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  /* Upload Button */
+  .open-modal-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  

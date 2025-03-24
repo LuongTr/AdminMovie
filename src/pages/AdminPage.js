@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import UploadForm from "../components/UploadForm";
-import MovieTable from "../components/MovieTable";
-import MovieDetails from "../components/MovieDetails";
-import "../styles/styles.css";
+import Header from "../components/Header/Header";
+import UploadForm from "../components/UploadForm/UploadForm";
+import MovieTable from "../components/MovieTable/MovieTable";
+import MovieDetails from "../components/MovieDetails/MovieDetails";
+import "./AdminPage.css"; // Styling for the admin page
 
 const AdminMovie = () => {
   const [movies, setMovies] = useState([
