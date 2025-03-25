@@ -4,6 +4,8 @@ import UploadForm from "../components/UploadForm/UploadForm";
 import MovieTable from "../components/MovieTable/MovieTable";
 import MovieDetails from "../components/MovieDetails/MovieDetails";
 import "./AdminPage.css"; // Styling for the admin page
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 const AdminMovie = () => {
   const [movies, setMovies] = useState([
@@ -12,7 +14,7 @@ const AdminMovie = () => {
       rating: "8.8",
       language: "English",
       year: "2010",
-      banner: "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg",
+      banner: "",
       description: "A thief who enters the dreams of others to steal their secrets gets a chance at redemption."
     }
   ]);
@@ -27,7 +29,7 @@ const AdminMovie = () => {
   return (
     <div className="admin-page">
       <Header />
-      <button className="open-modal-btn" onClick={() => setModalOpen(true)}>Upload Movie</button>
+      <button className="open-modal-btn" onClick={() => setModalOpen(true)}><i className="fa-solid fa-upload"></i></button>
       
       {/* Show the upload form without blurring anything */}
       {isModalOpen && (

@@ -7,8 +7,10 @@
   
   /* Upload Button */
   .open-modal-btn {
-    background: #28a745;
-    color: white;
+    display: flex;
+    justify-content: flex-end;
+    background: #fdcf6f;
+    color: #0c756f;
     border: none;
     padding: 10px 16px;
     font-size: 14px;
