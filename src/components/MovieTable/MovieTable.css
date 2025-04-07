@@ -20,11 +20,11 @@
   }
   
   .movie-table th {
-    background: #0c756f;
+    background: #304FFE;
     color: white;
   }
   
   .movie-row:hover {
-    background: #fdcf6f;
+    background: #C5CAE9;
     cursor: pointer;
   }

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.login-container {
+    background-image: url("https://raw.githubusercontent.com/CiurescuP/LogIn-Form/main/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    height: 590px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 17px;
+    backdrop-filter: blur(5px);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(129, 236, 174, 0.6);
+    padding: 20px;
+    color: #fff;
+}
+
+.login-form * {
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+}
+
+.login-form h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.login-form input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 11px 15px;
+    font-size: 14px;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.22);
+    border: 2px solid #38363654;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login-form input:hover {
+    background: #434343;
+    transition: all 0.5s ease;
+}
+
+.login-form input:focus {
+    box-shadow: 0px 2px 2px #0000002b, 0px 5px 10px #00000036;
+    background: #434343;
+}
+
+.login-form button {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.22);
+    border: 2px solid #38363654;
+    border-radius: 5px;
+    color: #e1e1e1;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #629677;
+    transition: all 0.5s ease;
+}
+
+.login-form .social-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.login-form .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login-form .social-icon {
+    margin: 0 5px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.login-form .social-icon:hover {
+    box-shadow: 0px 4px 14px #0000007a;
+}

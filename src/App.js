@@ -23,12 +23,19 @@
 // }
 
 // export default App;
-import React from "react";
+import React, { useState } from "react";
+import Login from "./login/login"
 import AdminMovie from "./pages/AdminPage";
 
-const App = () => {
-  return <AdminMovie />;
-};
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  return isLoggedIn ? (
+    <AdminMovie />
+  ) : (
+    <Login onLogin={() => setIsLoggedIn(true)} />
+  );
+}
 
 export default App;
 
