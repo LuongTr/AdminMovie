@@ -25,11 +25,25 @@ const AdminMovie = () => {
     setMovies([...movies, movie]);
     setModalOpen(false); // Close modal after uploading
   };
-
+  
+  const [searchQuery, setSearchQuery] = useState("");
+  const filteredMovies = movies.filter((movie) =>
+    movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  
   return (
     <div className="admin-page">
       <Header />
-      <button className="open-modal-btn" onClick={() => setModalOpen(true)}><i className="fa-solid fa-upload"></i></button>
+      <div className="top-bar">
+        <button className="open-modal-btn" onClick={() => setModalOpen(true)}><i className="fa-solid fa-upload"></i></button>
+        <input 
+          type="text"
+          placeholder="Search by title"
+          className="search-bar"  
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
       
       {/* Show the upload form without blurring anything */}
       {isModalOpen && (
@@ -39,7 +53,7 @@ const AdminMovie = () => {
       )}
 
       <div className="content">
-        <MovieTable movies={movies} onSelect={setSelectedMovie} />
+        <MovieTable movies={filteredMovies} onSelect={setSelectedMovie} />
         <MovieDetails movie={selectedMovie} />
       </div>
     </div>

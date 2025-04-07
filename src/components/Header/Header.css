@@ -4,11 +4,22 @@
     justify-content: space-between;
     padding: 15px;
     /* background: #ddd; */
-    background: white;
+    background: #283593;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .logo {
     font-size: 24px;
-    color: #333;
+    color: white;
+  }
+
+  .logout-btn {
+    background: #fdcf6f;
+    color: #0c756f;
+    border: none;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
   }
